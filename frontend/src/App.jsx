@@ -1,5 +1,14 @@
+
+import './App.css'
+import Layout from './pages/Layout'
+
 function App() {
-  return <h1 className="text-3xl font-bold">Hello world!</h1>;
+
+  return (
+    <div>
+          <Layout/>
+    </div>
+  )
 }
 
 export default App;
