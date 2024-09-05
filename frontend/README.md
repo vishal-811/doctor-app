@@ -1,8 +1,6 @@
-# React + Vite
+## Things To do in UI
+1. We can add video or image in the Herosection to make it more pretty.
+2. We can add another features in the main section like testimonials section and much more.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Things Todo For optimization.
+1. put all the images in a cdn.
