@@ -4,8 +4,7 @@ const HeroSection=()=>{
         <div className="md:max-w-[75%] w-full mx-auto p-6 md:p-0 select-none flex space-x-12 ">
               {/* Hero Section Content */}
               <div className="md:max-w-[60%] w-full">
-                    <div> 
-                           
+                    <div>  
                            {/* Heading */}
                          <p className="text-5xl  font-sans md:tracking-wide tracking-normal md:leading-snug leading-tight font-semibold text-zinc-800">
                          Connect with top doctors instantly using AI your health, just a 
