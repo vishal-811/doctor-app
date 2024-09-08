@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom"
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
+   
+     const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 768) { // Check for larger screens (md and up)
@@ -43,10 +45,14 @@ const Navbar = () => {
           
           {/* Auth buttons */}
           <div className="flex space-x-4">
-            <button className="border-2 border-blue-500 px-4 py-2 rounded-xl text-blue-500 hover:bg-blue-100 transition-colors duration-300">
+            <button onClick={async()=>{
+                navigate('/signin')
+            }} className="border-2 border-blue-500 px-4 py-2 rounded-xl text-blue-500 hover:bg-blue-100 transition-colors duration-300">
               Log in
             </button>
-            <button className="bg-blue-600 px-4 py-2 rounded-xl text-white">
+            <button onClick={async()=>{
+               navigate('/signup')
+            }} className="bg-blue-600 px-4 py-2 rounded-xl text-white">
               Sign up for free
             </button>
           </div>
@@ -83,10 +89,14 @@ const Navbar = () => {
             <p className="cursor-pointer">Home</p>
             <p className="cursor-pointer">About</p>
             <p className="cursor-pointer">AI Tools</p>
-            <button className="border-2 border-blue-500 px-6 py-2 rounded-xl text-blue-500 hover:bg-blue-100 transition-colors duration-300">
+            <button onClick={async()=>{
+               navigate('/signin')
+            }} className="border-2 border-blue-500 px-6 py-2 rounded-xl text-blue-500 hover:bg-blue-100 transition-colors duration-300">
               Log in
             </button>
-            <button className="bg-blue-600 px-4 py-2 rounded-xl text-white">
+            <button onClick={async()=>{
+                navigate('/signup')
+            }} className="bg-blue-600 px-4 py-2 rounded-xl text-white">
               Sign up for free
             </button>
           </div>

@@ -1,4 +1,4 @@
-import aboutsvg from '../assets/Aboutpage.svg';
+import aboutsvg from '../../assets/Aboutpage.svg';
 
 const About = () => {
   return (
