@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
    
      const navigate = useNavigate();
-  useEffect(() => {
+    useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 768) { // Check for larger screens (md and up)
         setScrolled(window.scrollY > 0);

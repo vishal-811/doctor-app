@@ -1,5 +1,5 @@
 
-export const InputLabel=({labeltext ,placeholdertext ,Errortext,inputtype ,onChange,errorColor})=>{
+export const InputLabel=({labeltext ,placeholdertext ,Errortext='',inputtype ,onChange,errorColor=''})=>{
     return(
         <div className="flex flex-col mt-5">
         <label className="text-zinc-700 mb-1">{labeltext}</label>

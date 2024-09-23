@@ -118,7 +118,7 @@ export const SignupComponent = () => {
           <Button text={"Sign up"}
             onClick={async () => {
               // Validate Input fields
-              if (!signPostParams.Fullname) {
+              if (!signPostParams.username) {
                 setErrorText("Fullname")
                 return
               }
@@ -139,6 +139,7 @@ export const SignupComponent = () => {
                 return
               }
                     alert("signup ho gya hai")
+                     navigate('/editprofile')
               try {
                 const response = await axios.post('backend url', {
                   ...signPostParams,
@@ -146,7 +147,7 @@ export const SignupComponent = () => {
                 })
                 console.log(response)
                 if (response.status === 200) {
-                  navigate('/')
+                  navigate('/editprofile');
                 }
               } catch (error) {
                 console.log(error)

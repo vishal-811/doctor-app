@@ -15,6 +15,7 @@ const Signup = () => {
     )
   );
 }
+
 const ChooseRole = () => {
     const { setRole } = useRole();
     const [selectedRole, setSelectedRole] = useState(null);
